@@ -7,34 +7,35 @@ import Typography from '@material-ui/core/Typography';
 // @material-ui/icons
 
 // core components
-// import Header from "components/Header/Header.jsx";
+import Header from "../../components/Header";
 // import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "../../components/Grid/GridContainer";
 import GridItem from "../../components/Grid/GridItem.jsx";
 import Button from "../../components/Button";
-// import HeaderLinks from "components/Header/HeaderLinks.jsx";
+import HeaderLinks from "../../components/HeaderLinks";
 // import Parallax from "components/Parallax/Parallax.jsx";
 import Parallax from "../../components/Parallax";
 
 import homePageStyle from "./styles";
+
+// import {} from '@material-ui/icons/'
 
 // Sections for this page
 // import ProductSection from "./Sections/ProductSection.jsx";
 // import TeamSection from "./Sections/TeamSection.jsx";
 // import WorkSection from "./Sections/WorkSection.jsx";
 
-// const dashboardRoutes = [];
+const dashboardRoutes = [];
 
 class Home extends Component {
   render() {
     const { classes, ...rest } = this.props;
     return (
       <div>
-        {/*}
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Material Kit React"
+          brand="Citi BIP"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -43,7 +44,6 @@ class Home extends Component {
           }}
           {...rest}
         />
-        {//*/}
         <Parallax filter image={require("../../assets/img/jumbotron-citiconnect2.jpg")}>
           <div className={classes.container}>
             <GridContainer>
