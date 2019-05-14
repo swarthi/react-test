@@ -9,7 +9,8 @@ import {
   roseColor,
   transition,
   boxShadow,
-  drawerWidth
+  drawerWidth,
+  conatinerFluid
 } from '../../assets/jss/styles';
 
 const headerStyle = {
@@ -38,6 +39,9 @@ const headerStyle = {
   fixed: {
     position: "fixed",
     zIndex: "1100"
+  },
+  conatinerFluid: {
+    ...conatinerFluid
   },
   container: {
     ...container,

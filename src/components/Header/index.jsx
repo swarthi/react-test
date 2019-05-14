@@ -78,7 +78,7 @@ class Header extends React.Component {
     const brandComponent = <Button className={classes.title}><img height="32" src={logo} alt={brand} /></Button>;
     return (
       <AppBar className={appBarClasses}>
-        <Toolbar className={classes.container}>
+        <Toolbar className={classes.conatinerFluid}>
           {leftLinks !== undefined ? brandComponent : null}
           <div className={classes.flex}>
             {leftLinks !== undefined ? (
